@@ -1,0 +1,213 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #fff5f7;
+    min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+    background-color: rgba(252, 231, 243, 0.8);
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    justify-content:left;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    justify-content:left;
+}
+
+.nav-list {
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 1rem; /* 按鈕之間的間距 */
+    list-style: none; /* 移除預設列表樣式 */
+    /* 讓按鈕靠右對齊 */
+   
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1rem; /* 增加按鈕內邊距 */
+    font-size: 1rem; /* 調整文字大小 */
+  }
+
+.nav-button {
+    background-color: #f8accc;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-family: 'Noto Sans TC', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #f8b4d9;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    height: 16rem;
+    background-size: cover;
+    
+}
+
+/* Main Content */
+.main-content {
+    max-width: 3000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.container {
+    background-color: rgba(252, 231, 243, 0.5);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    
+    max-width: 20rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.tarot-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tarot-card img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 15 auto;
+}
+
+.card-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card-info h3 {
+    font-weight: 500;
+}
+
+.card-info p {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 1.875rem;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#drawButton {
+    background-color: #f7a9c4; /* 粉紅色背景 */
+    color: #e7e4e4; /* 白色文字 */
+    font-size: 1.2rem; /* 調整字體大小 */
+    font-weight: bold; /* 加粗字體 */
+    padding: 0.8rem 1.5rem; /* 內邊距 */
+    border: none; /* 移除按鈕邊框 */
+    border-radius: 30px; /* 圓角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 按鈕陰影 */
+    cursor: pointer; /* 滑鼠指針變為手型 */
+    transition: all 0.3s ease; /* 平滑過渡效果 */
+    margin-bottom: 1.5rem;
+    margin-top: 30px;
+  }
+  
+  #drawButton:hover {
+    background-color: #f48fb1; /* 滑過時的深粉色背景 */
+    color: #f3c1d1; /* 滑過時的文字顏色 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* 加強陰影 */
+    transform: scale(1.05); /* 放大按鈕 */
+  }
+  
+  #drawButton:active {
+    background-color: #ec407a; /* 按下時的更深粉色背景 */
+    transform: scale(0.95); /* 按下時縮小按鈕 */
+  }
+
+  #flower{
+    background-size:contain;
+  }
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarot-container {
+        padding: 2rem;
+    }
+
+    
+}
